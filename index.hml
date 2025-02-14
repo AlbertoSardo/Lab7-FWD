@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planetary Facts</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">Planetary Data Table</h1>
+    <p class="subtitle">Combining Data from <em>NSSDC</em> for 4 Planets</p>
+  </header>
+
+  <main>
+    <!-- Intro Section -->
+    <section id="intro">
+      <h2>Overview</h2>
+      <p>
+        Below is a summary table of four planets in our Solar System. We have gathered
+        seven key data points to give you a quick comparison of their characteristics.
+      </p>
+    </section>
+
+    <!-- Images Section (Optional) -->
+    <section id="images-row">
+      <figure>
+        <img src="images/mercury.jpg" alt="Mercury" />
+        <figcaption>Mercury</figcaption>
+      </figure>
+      <figure>
+        <img src="images/venus.jpg" alt="Venus" />
+        <figcaption>Venus</figcaption>
+      </figure>
+      <figure>
+        <img src="images/earth.jpg" alt="Earth" />
+        <figcaption>Earth</figcaption>
+      </figure>
+      <figure>
+        <img src="images/mars.jpg" alt="Mars" />
+        <figcaption>Mars</figcaption>
+      </figure>
+    </section>
+
+    <!-- Data Table Section -->
+    <section id="table-section">
+      <h2>Planetary Data</h2>
+      <table id="planet-table">
+        <thead>
+          <tr>
+            <th>Planet</th>
+            <th>Mean Radius (km)</th>
+            <th>Mass <br>(10^24 kg)</th>
+            <th>Distance from Sun (10^6 km)</th>
+            <th>Orbital Period (days)</th>
+            <th>Surface Gravity (m/s^2)</th>
+            <th>Length of Day (hrs)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="planet-row">
+            <td class="planet-name">Mercury</td>
+            <td>2,439.7</td>
+            <td>0.330</td>
+            <td>57.9</td>
+            <td>88</td>
+            <td>3.7</td>
+            <td>4,222.6</td>
+          </tr>
+          <tr class="planet-row">
+            <td class="planet-name">Venus</td>
+            <td>6,051.8</td>
+            <td>4.87</td>
+            <td>108.2</td>
+            <td>224.7</td>
+            <td>8.87</td>
+            <td>2,802</td>
+          </tr>
+          <tr class="planet-row">
+            <td class="planet-name">Earth</td>
+            <td>6,371.0</td>
+            <td>5.97</td>
+            <td>149.6</td>
+            <td>365.2</td>
+            <td>9.8</td>
+            <td>24</td>
+          </tr>
+          <tr class="planet-row">
+            <td class="planet-name">Mars</td>
+            <td>3,389.5</td>
+            <td>0.642</td>
+            <td>227.9</td>
+            <td>687</td>
+            <td>3.71</td>
+            <td>24.6</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data Source: <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">NASA NSSDC</a></p>
+  </footer>
+
+</body>
+</html>
